@@ -1,0 +1,36 @@
+.top{
+	bottom: -100px;
+	position: relative;
+	margin: auto;
+	width: 200px;
+	height: 200px;
+	background: #4682b4;
+}
+
+.intop{
+
+	top: -40px;
+	margin-left: 175px;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	background: #ffa07a;
+}
+
+.img1{
+    float: left;
+	width: 290px;
+	height: 150px;
+	margin-left: 400px;
+	margin-top:150px ;
+	
+
+}
+.img2{
+	float: right;
+	width: 290px;
+	height: 150px ;
+	margin-right: 350px;
+	margin-top:150px;
+	
+}
