@@ -1,0 +1,26 @@
+#blk1{
+	position: relative;
+	background-color: lightgrey;
+	color: black;
+	width: 430px;
+	height: 430px;
+	left: 30%;
+}
+#blk2{
+	position: absolute;
+background-color: blue;
+color: black;
+width: 280px;
+height: 150px;
+left: 34.88%;
+bottom: 30%;
+}
+#blk3{
+position: fixed;
+background-color: darkblue;
+color: white;
+width: 100px;
+height: 40px;
+bottom: 0;
+left: 90%;
+}
