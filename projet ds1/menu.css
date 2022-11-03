@@ -1,0 +1,183 @@
+*{
+	margin: 0;
+	padding: 0;
+
+	
+}
+.body{
+	background-color: white;
+	font-family: 'Kufam', sans-serif;
+} 
+#sidebar{
+	position: fixed;
+	width: 30%;
+	height: 100%;
+	left: -30%;
+	background-color: yellow;
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 100px;
+	font-family: 'Kufam', sans-serif;
+
+}
+
+
+#sidebar li{
+
+	color:black;
+	font-size: 30px;
+	padding: 30px;
+	border-bottom: 1px solid gray;
+	text-align: right;
+
+}
+.toggle-btn{
+	position: absolute;
+	left: 105%;
+	top: 15px;
+}
+.toggle-btn span{
+	display: block;
+	background-color: orangered ;
+	width: 30px;
+	height: 5px;
+	margin: 3px;
+}
+
+#sidebar.active{
+	left: 0;
+}
+.about{
+	float: right;	
+
+}
+#sidebar ul li:hover,
+#sidebar ul li.active{
+	color: orangered;
+	background: white;
+	border-right: 20 solid orangered;
+	text-decoration: none;
+}
+
+#sidebar ul li a:hover,
+#sidebar ul li a.active{
+	color: orangered;
+	background: white;
+	border-right: 20 solid orangered;
+	text-decoration: none;
+}
+#sidebar ul li a:hover:before,
+#sidebar ul li a.active:before{
+	display: block;
+	text-decoration: none;
+}
+a{ 
+text-decoration: none;
+color: black;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+	margin-left: 10%;
+	
+}
+.logo img{
+	height: 500%;
+	width: 500%;
+	border-radius: 60%;
+	float: right;
+
+	
+}
+/*Carte à retourner /Flipping Card : menus */
+
+.card{
+    height: 300px;
+    width: 200px;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+}
+.image{margin-right: 20%;}
+.front,
+.back{
+	position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+
+	color:black;
+	    border-radius: 10px;
+    position: absolute;
+	border: none;
+	border-radius: 30%;
+	
+
+}
+
+.back{
+display: grid;
+	align-items: center;
+	text-align: center;
+	
+	
+}
+.back button{
+	background-color: yellow;
+	border-radius: 30%;
+	border: none;
+	width: 100px;
+	height: 60px;
+}
+.back img{
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+}
+.front{
+    background: linear-gradient(yellow,rgb(236, 236, 230));
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.back{
+    background: linear-gradient(white,gray);
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+.container:hover .card{
+    transform: rotateY(180deg);
+}
+
+.container{
+    perspective: 1000px;
+}
+
+.image img {
+	float: left;
+
+	
+}
+/*footer*/
+
+.ftr{
+	position:fixed;
+	bottom: 0;
+	background-color: yellow;
+	width: 200%;
+
+}
+.ftr1 ul {
+margin-left: 50%;
+}
+.front{
+	text-align: right ;
+     text-align-last: center;
+}
