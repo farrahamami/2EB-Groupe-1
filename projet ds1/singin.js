@@ -1,26 +1,23 @@
-
- function verif2(){
-    p = document.getElementById("t2").value;
-    if (/[دظزوةىرؤءذطكمنتالبيسشجحخهعغفقثصض]/.test(p)==false)
+function verif1(){
+    n = document.getElementById("t1").value;
+    if (/[دظ زوةى رؤءذط ك م ن ت ال ب ي س ش ج ح خ ه ع غ ف ق ث ص ض]/.test(n)==false)
      {
         alert(" الرجاء التثبت من الاسم و اللقب")
      }
  }
- 
- function verif4()
- {
-     mail= document.getElementById("t3").value; 
-     if (/[دظ زوةى رؤءذط ك م ن ت ال ب ي س ش ج ح خ ه ع غ ف ق ث ص ض ][@gmail.com]/.test(mail)==false)
+ function verifmail(){
+    n = document.getElementById("mail").value;
+    if (/[@gmail.com$]/.test(n)==false)
      {
-         alert("الرجاء التثبت من البريد الالكتروني")
-     }
+        alert(" @gmail.com الرجاء التثبت من انه  ينتهي ")
  }
- function verif3(){
-    tel= document.getElementById("t4").value; 
+}
+
+function verifnum(){
+    tel= document.getElementById("num").value; 
     if (/[0-9]/.test(tel)==false)
      {
       alert("الرجاء التثبت من رقم الهاتف")
 
      }
-}
- 
+    }
