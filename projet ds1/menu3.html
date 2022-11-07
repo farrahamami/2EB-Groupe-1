@@ -15,6 +15,24 @@
         function togglemenu(){
             document.getElementById('sidebar').classList.toggle('active');
         }
+        function buying(){
+            var result = confirm('متأكد تحب تشري؟');
+            if (result == false) {
+                event.preventDefault();
+            }
+            adressesure();
+            receive();
+
+        }
+        function adressesure(){
+            var result = confirm('متأكد من عنوان دارك؟');
+            if (result == false) {
+                event.preventDefault();
+            }
+        }
+        function receive(){
+            alert('عيشك! قضيتك تصبح عندك!\nالدفع عند الإستلام.')
+        }
     </script>
 </head>
 <body class="body">
@@ -38,7 +56,10 @@
     <div class="content">
         <img src="img/slatameshweya.jpg">
         <h3>سلاطة مشوية</h3>
-        <p>االمحتوى: 1 كغ سميد، 250 غ فارينة، 500 غ تمر مرحي، 200 غ جلجلان، نصف كيس خميرة، 250 غ سكر، كعبة قارص، 1 لتر زيت، نصف كيس بيكاربوناتو...</p>
+        <p>
+القضية: 500 غ طماطم، 500 غ فلفل أخضر، 1 بصلة،3 ثوم، ملح، تابل و كراوية، قارصة، زيت زيتون، 50 غ تن، 3 عضم
+
+</p>
         <h6>10 دينار</h6> 
         <ul class="star">
             <li><i class="fa fa-star checked"></i></li>
@@ -53,7 +74,10 @@
 <div class="content">
         <img src="img/tastira.jpg">
         <h3>تسطيرة</h3>
-        <p>المحتوى: 5 عضم، 5 مغارف سكر ،5 مغارف زيت، مغرفة كبيرة، سكر فانيليا، مغرفة كبيرة خميرة مرطبات ،نصف كوب جلجلان ،500 غ فارينة...</p>
+        <p>
+االقضية: 2 طماطم ، 4 قرون فلفل، 2 فص ثوم، 1 عضمة، ملح، فلفل أكحل، زيت زيتونة، زيت حاكم
+
+</p>
         <h6>10 دينار</h6> 
         <ul class="star">
             <li><i class="fa fa-star checked"></i></li>
@@ -68,7 +92,10 @@
 <div class="content">
         <img src="img/ommekhoureya.jpg">
         <h3>أمّك حوريّة</h3>
-        <p>المحتوى: 500 غ زڨوڨو، 1،4 ل ماء، 400 غ فارينة، 200 غ حليب، 200 غ سكر، عطرشية، 100 غ لوز، 100 غ فستق، 50 غ بندق</p>
+        <p>
+القضية: 250 غ سفنّارية، هريسة، 2 ثوم، نعناع، 50 غ زيتون، زيت، قارص، معدنوس، 50 غ تن، 1 عضمة
+
+</p>
         <h6>10 دينار</h6> 
         <ul class="star">
             <li><i class="fa fa-star checked"></i></li>
@@ -83,7 +110,8 @@
 <div class="content">
         <img src="img/aadass.jpg">
         <h3>مرقة عدس</h3>
-        <p>المحتوى: 300 غ فارينة، 200 غ سكر، 3 عضم، 100 غ جلجلان، نشاء، نص قارصة، مغرفة زيت نباتي، زيت، ماء زهر، 100مل ماء</p>
+        <p>
+القضية: عدس، 1 بصلة ، 2 سفنارية، 3 ثوم، 1 قارص، 1 معجون طماطم، قرفة ،كركم ، زيت الزيتون، ملح، فلفل اكحل</p>
         <h6>10 دينار</h6> 
         <ul class="star">
             <li><i class="fa fa-star checked"></i></li>
