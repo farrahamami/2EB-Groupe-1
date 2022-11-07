@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kool Tounsi</title>
+    <title>kool Tounsi</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kufam:ital@1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <script type="text/javascript" src="js//login.js"></script>
     <script type="text/javascript">
         function togglemenu(){
             document.getElementById('sidebar').classList.toggle('active');
@@ -31,91 +32,58 @@
             <li><a href="login.html"> تفضل <i class="fa-solid fa-user"></i></a></li>
     
         </ul>
-  </div>
-
-    <nav>
-  <img src="img/ya.png" width="600" height="300" alt="">
-</nav>
-  <div class="container">
-    <div class="title">أعمل compte</div>
-    <b><b></b></b>
-    <div class="content">
-     
-      <form action="#">
-        <div class="user-details">
-          <div class="input-box">
-            <span class="details">إسمك و لقبك</span>
-            <input type="text" placeholder="إكتب إسمك و لقبك" required onchange="verif2()" name="t2">
-          </div>
-          <div class="input-box">
-            <span class="details">وين تسكن</span>
-            <input type="text" placeholder="إكتب وين تسكن" >
-          </div>
-          <div class="input-box">
-            <span class="details">أدراس Email</span>
-            <input type="text" placeholder="إكتب أدراس email" onchange="verif4()" name="t3">
-          </div>
-          <div class="input-box">
-            <span class="details">نومروك</span>
-            <input type="text" placeholder="إكتب نومروك"  onchange="verif3()"  name="t4">
-          </div>
-          <div class="input-box">
-            <span class="details">كلمة سرك</span>
-            <input type="password" placeholder="إكتب كلمة سرك" >
-          </div>
-          <div class="input-box">
-            <span class="details">تأكد من كلمة سرك</span>
-            <input type="password" placeholder="تأكد من كلمة سرك" >
-          </div>
-        </div>
-        <div class="gender-details">
-          <input type="radio" name="gender" id="dot-1">
-          <input type="radio" name="gender" id="dot-2">
-          <input type="radio" name="gender" id="dot-3">
-          <span class="gender-title">جنسك</span>
-          <div class="category">
-            <label for="dot-1">
-            <span class="dot one"></span>
-            <span class="gender">ذكر</span>
-          </label>
-          <label for="dot-2">
-            <span class="dot two"></span>
-            <span class="gender">أنثى</span>
-          </label>
-          
-          </div>
-        </div>
-        <div class="button">
-          <input type="submit" value="سجل">
-        </div>
-      </form>
     </div>
-  </div>
-    <br>
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-   
-
+    
+    <div class="container">
+        
+        <div class="img">
+            <img src="img/mobile2.png">
+        
+        </div>
+        <div class="login-content">
+            <form action="index.html">
+                <img src="img/pic.png">
+                <h2 class="title">!زارتنا البركة </h2>
+                <div class="input-div one">
+                   <div class="i">
+                        <i class="fas fa-user"></i>
+                   </div>
+                   <div class="div">
+                        <h5>إسمك</h5>
+                        <input type="text" class="input" id="t1" onchange="verif1()">
+                   </div>
+                </div>
+                <div class="input-div pass">
+                   <div class="i"> 
+                        <i class="fas fa-lock"></i>
+                   </div>
+                   <div class="div">
+                        <h5>كلمة سرك</h5>
+                        <input type="password" class="input">
+                   </div>
+                </div>
+                <a href="signin.html" class="link">أوّل مرٌة؟</a>
+                <input type="submit" class="btn" value="سجل">
+            
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="login.js"></script>
 </body>
- 
-<br>
-<br>
-<br>
-<br>
-<br>
-<footer class="ftr">
-    <div class="ftr1">
-    <ul>
-     <a href="#"><i class="fa-brands fa-facebook"></i></a>
-     <a href="#"> <i class="fa-brands fa-instagram"></i></a>
-     <a href="#"><i class="fa-brands fa-twitter"></i></a>
-   </ul>
-</div>
-    <div class="ftr2"></div>
-    <div class="ftr3"></div>
-</footer>
-
-</html> 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class="ftr">
+        <div class="ftr1">
+        <ul>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+       </ul>
+    </div>
+        <div class="ftr2"></div>
+        <div class="ftr3"></div>
+    </footer>
+    </html> 
