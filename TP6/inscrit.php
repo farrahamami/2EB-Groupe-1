@@ -11,8 +11,8 @@ if (!$conn) {
 else {
 	$code=$_POST['c'];
 	$n= $_POST['n'];
-	$pren=$_POST['_p'];
-	$req="insert into table 1 values($code, '$n', '$pren')";
+	$pren=$_POST['p'];
+	$req="insert into table1 values($code, '$n', '$pren')";
 }
 	if (mysqli_query($conn, $req))
 	echo ("insertion valide");
