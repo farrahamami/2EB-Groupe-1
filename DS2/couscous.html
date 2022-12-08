@@ -1,0 +1,207 @@
+<!DOCTYPE>
+<html lang="AR">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kool Tounsi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kufam:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="couscous.css">
+    <script type="text/javascript">
+        function togglemenu(){
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+        function buying(){
+            var result = confirm('متأكد تحب تشري؟');
+            if (result == false) {
+                event.preventDefault();
+            }
+            adressesure();
+            receive();
+
+        }
+        function adressesure(){
+            var result = confirm('متأكد من عنوان دارك؟');
+            if (result == false) {
+                event.preventDefault();
+            }
+        }
+        function receive(){
+            alert('عيشك! قضيتك تصبح عندك!\nالدفع عند الإستلام.')
+        }
+        </script>
+</head>
+<body class="body">
+    <div id="sidebar" onclick="togglemenu()">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span> 
+        </div>
+        <ul>
+            <li><a href="AboutUs.html"> احنا شكون <i class="fa-regular fa-address-card"></i></a></li>
+            <li><a href="menu.html">   دبارتنا <i class="fa-solid fa-utensils"></i></a></li>
+            <li><a href="contact.html">      اشكي <i class="fa-solid fa-comments"></i></a></li>
+            <li><a href="login.html"> تفضل <i class="fa-solid fa-user"></i></a></li>
+    
+        </ul>
+    </div>
+    <form action="couscous.php" method="post">
+<div class="content">
+        <img src="img/couscous1.jpg">
+        <h3 name="name" value="couscous">كسكسي</h3>
+        <p>القضية: 750 غ كسكسي، 750 غ لحم علوش، 200 غ سفنارية، 200 غ بطاطا، 200 غ لفت، 200 غ قرع احمر، 200غ قرع اخضر، 1 بصلة، 150 غ حمص منفخ،... </p>
+        <div class="ingredients">
+        <label class="labelexpand">
+            <input type="hidden" name="ingredient1" value="none">
+            <input type="checkbox" name="ingredient1" value="couscous">
+            <div class="checking">
+                <img class="ing1" src="img/c.png">
+            </div>
+        </label>
+        <input type="hidden" name="ingredient2" value="none">
+        <label class="labelexpand">
+            <input type="checkbox" name="ingredient2" value="meat">
+            <div class="checking">
+                <img class="ing2" src="img/l.png">
+            </div>
+        </label>
+        <label class="labelexpand">
+            <input type="hidden" name="ingredient3" value="none">
+            <input type="checkbox" name="ingredient3" value="onion">
+            <div class="checking">
+                <img class="ing3" src="img/o.png">
+            </div>
+        </label>
+        <label class="labelexpand">
+            <input type="hidden" name="ingredient4" value="none">
+            <input type="checkbox" name="ingredient4" value="garlic">
+            <div class="checking">
+                <img class="ing4" src="img/g.png">
+            </div>
+        </label>
+        <label class="labelexpand">
+            <input type="hidden" name="ingredient5" value="none">
+            <input type="checkbox" name="ingredient5" value="tomato paste" >
+            <div class="checking">
+                <img class="ing5" src="img/t.png">
+            </div>
+        </label>
+        <label class="labelexpand">
+            <input type="hidden" name="ingredient6" value="none">
+            <input type="checkbox" name="ingredient6" value="harissa">
+            <div class="checking">
+                <img class="ing6" src="img/h.png">
+            </div>
+        </label>
+            <label class="labelexpand">
+                <input type="hidden" name="ingredient7" value="none">
+            <input type="checkbox" name="ingredient7" value="pepper powder">
+            <div class="checking">
+                <img class="ing7" src="img/cp.png">
+            </div>
+        </label>
+        <label class="labelexpand">
+            <input type="hidden" name="ingredient8" value="none">
+            <input type="checkbox" name="ingredient8" value="coriander">
+            <div class="checking">
+                <img class="ing8" src="img/cor.png">
+            </div>
+        </label>
+        <label class="labelexpand">
+            <input type="hidden" name="ingredient9" value="none">
+            <input type="checkbox" name="ingredient9" value="caraway">
+            <div class="checking">
+                <img class="ing9" src="img/cara.png">
+            </div>
+        </label>
+        <label class="labelexpand">
+            <input type="hidden" name="ingredient10" value="none">
+            <input type="checkbox" name="ingredient10" value="potato">
+            <div class="checking">
+                <img class="ing10" src="img/ptt.png">
+            </div>
+        </label>
+        <label class="labelexpand">
+            <input type="hidden" name="ingredient11" value="none">
+            <input type="checkbox" name="ingredient11" value="veggie oil">
+            <div class="checking">
+                <img class="ing11" src="img/oo.png">
+            </div>
+        </label>
+        <label class="labelexpand">
+            <input type="hidden" name="ingredient12" value="none">
+            <input type="checkbox" name="ingredient12" value="turnips">
+            <div class="checking">
+                <img class="ing12" src="img/tr.png">
+            </div>
+        </label><label class="labelexpand">
+            <input type="hidden" name="ingredient13" value="none">
+            <input type="checkbox" name="ingredient13" value="zuchinni">
+            <div class="checking">
+                <img class="ing13" src="img/z.png">
+            </div>
+        </label><label class="labelexpand">
+            <input type="hidden" name="ingredient14" value="none">
+            <input type="checkbox" name="ingredient14" value="salt">
+            <div class="checking">
+                <img class="ing14" src="img/ss.png">
+            </div>
+        </label>
+        <label class="labelexpand">
+            <input type="hidden" name="ingredient15" value="none">
+            <input type="checkbox" name="ingredient15" value="green pepper">
+            <div class="checking">
+                <img class="ing15" src="img/gp.png">
+            </div>
+        </label>
+        <label class="labelexpand">
+            <input type="hidden" name="ingredient16" value="none">
+            <input type="checkbox" name="ingredient16" value="carrot">
+            <div class="checking">
+                <img class="ing16" src="img/crrt.png">
+            </div>
+        </label>
+        <label class="labelexpand">
+            <input type="hidden" name="ingredient17" value="none">
+            <input type="checkbox" name="ingredient17" value="chickpea">
+            <div class="checking">
+                <img class="ing17" src="img/chp.png">
+            </div>
+        </label>
+    </div>
+        <h6 name="price">14.200</h6> 
+        <div class="star">
+           <label><input type="radio" name="stars" value="one star" class="fa fa-star checked"></label> 
+           <label><input type="radio" name="stars" value="two stars" class="fa fa-star checked"></label>
+           <label><input type="radio" name="stars" value="three stars" class="fa fa-star checked"></label>
+           <label><input type="radio" name="stars" value="fours stars" class="fa fa-star checked"></label>
+           <label><input type="radio" name="stars" value="five stars" class="fa fa-star checked"></label>
+        </div>
+        <p>أعطي رايك</p>
+    <textarea name="review"></textarea>
+        <button type="submit" name="couscous" class="order1" onclick="buying()">إشري</button>
+    </div>
+</form>
+    <br>
+<br>
+<br>
+</body>
+
+<footer class="ftr">
+    <div class="ftr1">
+    <ul>
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+   </ul>
+</div>
+    <div class="ftr2"></div>
+    <div class="ftr3"></div>
+</footer>
+</body>
+</html> 

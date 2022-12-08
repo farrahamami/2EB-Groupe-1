@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="AR">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Tounsi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kufam:ital@1&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="couscous.png"/>
+    <link rel="stylesheet" href="menu2.css">
+    <script type="text/javascript">
+        function togglemenu(){
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+        function buying(){
+            var result = confirm('متأكد تحب تشري؟');
+            if (result == false) {
+                event.preventDefault();
+            }
+            adressesure();
+            receive();
+
+        }
+        function adressesure(){
+            var result = confirm('متأكد من عنوان دارك؟');
+            if (result == false) {
+                event.preventDefault();
+            }
+        }
+        function receive(){
+            alert('عيشك! قضيتك تصبح عندك!\nالدفع عند الإستلام.')
+        }
+    </script>
+</head>
+<body class="body">
+    <div id="sidebar" onclick="togglemenu()">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span> 
+        </div>
+        <ul >
+            <li><a href="AboutUs.html"> احنا شكون <i class="fa-regular fa-address-card"></i></a></li>
+            <li><a href="menu.html">   دبارتنا <i class="fa-solid fa-utensils"></i></a></li>
+            <li><a href="contact.html">      اشكي <i class="fa-solid fa-comments"></i></a></li>
+            <li><a href="login.html"> تفضل <i class="fa-solid fa-user"></i></a></li>
+    
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <br> 
+    <form action="menu.php" method="post">
+<div class="gallery">
+    <div class="content">
+        <img src="img/makroudh.jpg">
+        <h3>مقروض</h3>
+        <p>القضية: 1 كغ سميد، 250 غ فارينة، 500 غ تمر مرحي، 200 غ جلجلان، نصف كيس خميرة، 250 غ سكر، كعبة قارص، 1 لتر زيت، نصف كيس بيكاربوناتو...</p>
+        <h6>8.500</h6> 
+        <ul class="star">
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+        </ul>
+        <button class="order1" onclick="buying()">إشري</button>
+    </div>
+
+<div class="content">
+        <img src="img/yoyo.jpg">
+        <h3>يويو</h3>
+        <p>القضية: 5 عضم، 5 مغارف سكر ،5 مغارف زيت، مغرفة كبيرة، سكر فانيليا، مغرفة كبيرة خميرة مرطبات ،نصف كوب جلجلان ،500 غ فارينة...</p>
+        <h6>7.900</h6> 
+        <ul class="star">
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star "></i></li>
+        </ul>
+        <button class="order2" onclick="buying()">إشري</button>
+    </div>
+
+<div class="content">
+        <img src="img/zgougou.png">
+        <h3>عصيدة الزڨوڨو</h3>
+        <p>القضية: 500 غ زڨوڨو، 1،4 ل ماء، 400 غ فارينة، 200 غ حليب، 200 غ سكر، عطرشية، 100 غ لوز، 100 غ فستق، 50 غ بندق</p>
+        <h6>33.900 </h6> 
+        <ul class="star">
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+        </ul>
+        <button class="order3" onclick="buying()">إشري</button>
+    </div>
+
+<div class="content">
+        <img src="img/wednkadhi.jpg">
+        <h3>وذن القاضي</h3>
+        <p>القضية: 300 غ فارينة، 200 غ سكر، 3 عضم، 100 غ جلجلان، نشاء، نص قارصة، مغرفة زيت نباتي، زيت، ماء زهر، 100مل ماء</p>
+        <h6>8.200</h6> 
+        <ul class="star">
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+        </ul>
+        <button class="order4" onclick="buying()">إشري</button>
+    </div>
+
+</div>
+
+</form>
+<br>
+<br>
+<footer class="ftr">
+    <div class="ftr1">
+    <ul>
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+   </ul>
+</div>
+    <div class="ftr2"></div>
+    <div class="ftr3"></div>
+</footer>
+</body>
+</html> 

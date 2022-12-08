@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="AR">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kool Tounsi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kufam:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tajine.css">
+    <script type="text/javascript">
+        function togglemenu(){
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+        function buying(){
+            var result = confirm('متأكد تحب تشري؟');
+            if (result == false) {
+                event.preventDefault();
+            }
+            adressesure();
+            receive();
+
+        }
+        function adressesure(){
+            var result = confirm('متأكد من عنوان دارك؟');
+            if (result == false) {
+                event.preventDefault();
+            }
+        }
+        function receive(){
+            alert('عيشك! قضيتك تصبح عندك!\nالدفع عند الإستلام.')
+        }
+        </script>
+</head>
+<body class="body">
+    <div id="sidebar" onclick="togglemenu()">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span> 
+        </div>
+        <ul>
+            <li><a href="AboutUs.html"> احنا شكون <i class="fa-regular fa-address-card"></i></a></li>
+            <li><a href="menu.html">   دبارتنا <i class="fa-solid fa-utensils"></i></a></li>
+            <li><a href="contact.html">      اشكي <i class="fa-solid fa-comments"></i></a></li>
+            <li><a href="login.html"> تفضل <i class="fa-solid fa-user"></i></a></li>
+    
+        </ul>
+    </div>
+    <form action="tajine.php" method="post">
+<div class="content">
+        <img src="img/tajine1.jpg">
+        <h3>طاجين</h3>
+        <p>القضية: ¼ كيلو دجاج مقطع مكعبات، ¾ كوب جبن بارميجان، 10 عضم،1  بطاطة، ¼ كوب معدنوس مفروم، 1 بصلة، 2.5 غ كركم، 30 مل زيت...</p>
+        <div class="ingredients">
+        <label class="labelexpand">
+            <input type="hidden" name="ingredient1" value="none">
+            <input type="checkbox" name="ingredient1" value="chicken">
+            <div class="checking">
+                <img class="ing1" src="img/cc.png">
+            </div>
+        </label>
+        <label class="labelexpand">
+            <input type="hidden" name="ingredient2" value="none">
+            <input type="checkbox" name="ingredient2" value="parsley">
+            <div class="checking">
+                <img class="ing2" src="img/p.png">
+            </div>
+        </label>
+        <label class="labelexpand">
+            <input type="hidden" name="ingredient3" value="none">
+            <input type="checkbox" name="ingredient3" value="onion">
+            <div class="checking">
+                <img class="ing3" src="img/o.png">
+            </div>
+        </label>
+        <label class="labelexpand">
+            <input type="hidden" name="ingredient4" value="none">
+            <input type="checkbox" name="ingredient4" value="eggs">
+            <div class="checking">
+                <img class="ing4" src="img/e.png">
+            </div>
+        </label>
+        <label class="labelexpand">
+            <input type="hidden" name="ingredient5" value="none">
+            <input type="checkbox" name="ingredient5" value="olive oil">
+            <div class="checking">
+                <img class="ing5" src="img/oo.png">
+            </div>
+        </label>
+        <label class="labelexpand">
+            <input type="hidden" name="ingredient6" value="none">
+            <input type="checkbox" name="ingredient6" value="tumeric">
+            <div class="checking">
+                <img class="ing6" src="img/tm.png">
+            </div>
+        </label>
+            <label class="labelexpand">
+                <input type="hidden" name="ingredient7" value="none">
+            <input type="checkbox" name="ingredient7" value="tomato paste">
+            <div class="checking">
+                <img class="ing7" src="img/t.png">
+            </div>
+        </label>
+        <label class="labelexpand">
+            <input type="hidden" name="ingredient8" value="none">
+            <input type="checkbox" name="ingredient8" value="salt">
+            <div class="checking">
+                <img class="ing8" src="img/ss.png">
+            </div>
+        </label>
+        <label class="labelexpand">
+
+            <input type="hidden" name="ingredient9" value="none">
+            <input type="checkbox" name="ingredient9" value="butter">
+            <div class="checking">
+                <img class="ing9" src="img/ub.webp">
+            </div>
+        </label>
+        <label class="labelexpand">
+            <input type="hidden" name="ingredient10" value="none">
+            <input type="checkbox" name="ingredient10" value="grated cheese">
+            <div class="checking">
+                <img class="ing10" src="img/gc.png">
+            </div>
+        </label>
+    </div>
+        <h6>9.000</h6>
+       <div class="star">
+           <label><input type="radio" name="stars" value="one star" class="fa fa-star checked"></label> 
+           <label><input type="radio" name="stars" value="two stars" class="fa fa-star checked"></label>
+           <label><input type="radio" name="stars" value="three stars" class="fa fa-star checked"></label>
+           <label><input type="radio" name="stars" value="fours stars" class="fa fa-star checked"></label>
+           <label><input type="radio" name="stars" value="five stars" class="fa fa-star checked"></label>
+        </div>
+        <p>أعطي رايك</p>
+    <textarea name="review"></textarea>
+        <button type="submit" name="tajine" class="order1" onclick="buying()">إشري</button>
+    </div>
+    </form>
+    <br>
+<br>
+<br>
+</body>
+
+<footer class="ftr">
+    <div class="ftr1">
+    <ul>
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+   </ul>
+</div>
+    <div class="ftr2"></div>
+    <div class="ftr3"></div>
+</footer>
+</body>
+</html> 
+

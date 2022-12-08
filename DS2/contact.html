@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="AR">
+<head>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kool Tounsi</title>
+  
+    <title>Kool Tounsi</title>
+    <link rel="stylesheet" href="reclamation.css">
+    <script type="text/javascript" src="reclamation.js">
+        
+    </script>
+</head>
+<body>
+<body class="body">
+    <div id="sidebar" onclick="togglemenu()">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span> 
+        </div>
+        <ul >
+            <li><a href="AboutUs.html"> احنا شكون <i class="fa-regular fa-address-card"></i></a></li>
+            <li><a href="menu.html">   دبارتنا <i class="fa-solid fa-utensils"></i></a></li>
+            <li><a href="contact.html">    اشكي <i class="fa-solid fa-comments"></i></a></li>
+            <li><a href="login.html">    ثفضل <i class="fa-solid fa-user"></i></a></li>
+        </ul>
+    
+    </div>
+    <div class="container">
+        <h1>contacter-nous</h1>
+        <p>chers clients s'il y'a un probleme il suffit de remplir ce formulaire</p>
+        <div class="contact_box">
+            <div class="contact_left">
+             
+<form name="f1" method="POST" action="test.php">
+    <div class="input_rows">
+    <div class="input_group">
+        <label>nom et prenom</label>
+        <input type="text" placeholder="entre votre nom et prenom" id="t1" onchange="verif1()" name="nom">
+    </div>
+    <br>
+    <div class="input_group">
+        <label>e-mail</label>
+        <input type="email" placeholder="entre votre email" id="t2" name="email">
+    </div>
+    <br>
+
+    <div class="input_group">
+        <label>numreo</label>
+        <input type="text" placeholder="entre votre numero" id="t3" onchange="verif3()" name="numero">
+    </div>
+    </div>
+    <br>
+    <label>message</label>
+    <textarea rows="5" placeholder="your problem" onchange="verif4()" name="message"></textarea>
+    <button name="submit" type="submit"> send</button>
+</form>
+
+            </div>
+            <div class="contact_rigth">
+                <h3>nos informations</h3>
+                <table>
+                    <tr>
+                        <td>email</td>
+                        <td>koultunisi@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>localistation</td>
+                        <td>rue ibnoukholdoun</td>
+                    </tr>
+                    <tr>
+                        <td>phone</td>
+                        <td>55550550</td>
+                        <td>22220220</td>
+                    </tr>
+                </table>
+
+
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+<footer class="ftr">
+    <div class="ftr1">
+    <ul>
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+   </ul>
+</div>
+</footer>
+</body>
+</html>
