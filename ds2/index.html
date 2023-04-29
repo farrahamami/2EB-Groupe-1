@@ -1,0 +1,92 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Tic tac toe">
+        <meta name="keywords" content="HTML, CSS, JavaScript, tic tac toe, ucode, unitfactory, cbl, cblworld">
+        <meta name="author" content="Tetiana Rohalska">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic Tac Toe</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+      </head>
+      <body>
+          <!-- Confetti Animation -->
+  <section class="confetti " id="confetti">
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+  </section>
+  <header class="sticky top-0 z-10 backdrop-filter backdrop-blur bg-opacity-30 border-b border-gray-200 flex h-6 md:h-14 items-center justify-center px-4 text-xs md:text-lg font-medium sm:px-6 lg:px-8">
+    <h1 id="title" class="text-center mt-3 mb-5">Tic Tac Toe</h1>
+  </header>
+       
+        <main class="container"> 
+          <div class="row">
+         <div class="col-12 col-md-4 mb-4" >
+              <section id="startBox" class="border p-3">
+                <div class="form-floating mb-3">
+                  <label for="player1_name">Player 1:</label>
+                   <input type="text" class="form-control" id="player1_name" maxlength="20" placeholder="Player 'X'">
+                 
+                </div>
+                <div class="form-floating mb-3"><label for="size">size:</label>
+                  <input type="number" class="form-control" id="size" min="4" max="10" placeholder="4">
+                  
+                </div>
+                <button id="start" class="btn btn-primary w-100">START</button>
+              </section>
+          
+              <section id="field" class="border p-3">
+              </section>
+            
+          </div>
+                <section class="mb5- pb-12 flex items-center justify-center" id ="section1">
+                  <ul role="list" class="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-20">
+                      <div class="flex items-center gap-x-1 relative">
+                        <img id="player-x-avatar" class="h-14 w-14 md:h-28 md:w-28 rounded-full object-cover" src="img/a2.png" alt="x" />
+                        <div class="ml-4">
+                          <p id="player1" class="text-base front-semibold leading-7 tracking-tight text-gray-900 animate-bounce">Player X</p>
+                          <button id="player-x-avatar-action" class="ignore mt-[5px] rounded-md border border-gray-300 bg-indigo-600 text-white hover:bg-indigo-700 py-1.5 px-2.5 text-sm font-semibold text-gray-900 shadow-sm" type="button">Change</button>
+                        </div>
+                      </div>
+                      <div class="flex items-center gap-x-1 relative">
+                        <img id="player-o-avatar" class="h-14 w-14 md:h-28 md:w-28 rounded-full object-cover" src="img/a1.png" alt="o" />
+                        
+                        <div class="ml-4">
+                          <p id="player2" class="text-base front-semibold leading-7 tracking-tight text-gray-900">Ordinateur</p>
+                          <button id="player2_action" class="ignore mt-[5px] rounded-md border border-gray-300 bg-indigo-600 text-white hover:bg-indigo-700 py-1.5 px-2.5 text-sm font-semibold text-gray-900 shadow-sm" type="button">Change</button>
+                         
+                    </div>
+                <div id="turns" class="mb-3">
+                  <p id="titleTurns" class="fw-bold">Number of turns</p>
+                  <p id="numberTurns"></p>
+                </div>
+                <h2 id="status"></h2>
+                <button id="playAgain" class="btn btn-primary w-100 mb-2">PLAY AGAIN</button>
+                <button id="restart" class="btn btn-secondary w-100">RESTART</button>
+                  </div>  
+              </ul>
+
+              </section>
+            </div>
+          </div>
+        </div>
+        </main>
+        <script src="js/script.js"></script>
+       
+    
