@@ -41,7 +41,7 @@
               <section id="startBox" class="border p-3">
                 <div class="form-floating mb-3">
                   <label for="player1_name">Player 1:</label>
-                   <input type="text" class="form-control" id="player1_name" maxlength="20" placeholder="Player 'X'">
+                   <input type="text" class="form-control" id="player1_name" maxlength="20" placeholder="Player ''">
                  
                 </div>
                 <div class="form-floating mb-3"><label for="size">size:</label>
@@ -61,7 +61,7 @@
                         <img id="player-x-avatar" class="h-14 w-14 md:h-28 md:w-28 rounded-full object-cover" src="img/a2.png" alt="x" />
                         <div class="ml-4">
                           <p id="player1" class="text-base front-semibold leading-7 tracking-tight text-gray-900 animate-bounce">Player X</p>
-                          <button id="player-x-avatar-action" class="ignore mt-[5px] rounded-md border border-gray-300 bg-indigo-600 text-white hover:bg-indigo-700 py-1.5 px-2.5 text-sm font-semibold text-gray-900 shadow-sm" type="button">Change</button>
+                          <button id="player-x-avatar-action" class="ignore mt-[5px] rounded-md border border-gray-300 bg-indigo-600 text-white hover:bg-indigo-700 py-1.5 px-2.5 text-sm font-semibold text-gray-900 shadow-sm" type="button" onclick="changerAvatar">Change</button>
                         </div>
                       </div>
                       <div class="flex items-center gap-x-1 relative">
@@ -69,7 +69,7 @@
                         
                         <div class="ml-4">
                           <p id="player2" class="text-base front-semibold leading-7 tracking-tight text-gray-900">Ordinateur</p>
-                          <button id="player2_action" class="ignore mt-[5px] rounded-md border border-gray-300 bg-indigo-600 text-white hover:bg-indigo-700 py-1.5 px-2.5 text-sm font-semibold text-gray-900 shadow-sm" type="button">Change</button>
+                          <button id="player2_action" class="ignore mt-[5px] rounded-md border border-gray-300 bg-indigo-600 text-white hover:bg-indigo-700 py-1.5 px-2.5 text-sm font-semibold text-gray-900 shadow-sm" type="button" onclick="changerAvatar">Change</button>
                          
                     </div>
                 <div id="turns" class="mb-3">
