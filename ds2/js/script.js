@@ -65,7 +65,7 @@ let drawField = () => {
 }
 
 let handleStart = () => {
-    player1.innerHTML = player1_name.value === '' ? 'Player \'X\'' : player1_name.value
+    player1.innerHTML = player1_name.value === '' ? 'Player \'😎\'' : player1_name.value
     cols = checkInput(document.getElementById('size').value)
     rows = checkInput(document.getElementById('size').value)
     steps = Math.min(rows, cols)
@@ -78,7 +78,7 @@ let handleStart = () => {
 }
 // ---------------------------------- WINNER ALGORITHM
 let isWinning = (y, x, player) => {
-    let winner = player === 'X' ? 1 : 2,
+    let winner = player === '😎' ? 1 : 2,
         length = steps * 2 - 1,
         radius = steps - 1,
         countWinnMoves, winnCoordinates
@@ -157,7 +157,7 @@ let isWinning = (y, x, player) => {
 // ----------------------------------  GAME ONGOING
 
 let handlePlayerSwitch = () => {
-    if (currentPlayer === 'x' ) {
+    if (currentPlayer === '😎' ) {
         player1.style.background = '#8458B3'
         player2.style.background = '#d0bdf4'
     } else {
@@ -182,12 +182,12 @@ let handleClick = (event) => {
         return
 
     gameState[i][j] = 1
-    event.target.innerHTML = currentPlayer
+    event.target.innerHTML = currentPlayer='X' ? '😎' : '🤖'
     countField.innerHTML = `${++counter}`
 // Check if 'X' has won
-    isWinning(i, j,'X')
+    isWinning(i, j,'😎')
     // Check if 'o' has won
-    isWinning(i, j,'o')
+    isWinning(i, j,'🤖')
     isMovesLeft()
 
     if (currentPlayer) {
@@ -202,12 +202,12 @@ let handleClick = (event) => {
         let randomIndex = Math.floor(Math.random() * emptySpaces.length)
      let [computerRow, computerCol] = emptySpaces[randomIndex]
         gameState[computerRow][computerCol] = 2
-        document.getElementById(`${computerRow}_${computerCol}`).innerHTML = '0'
+        document.getElementById(`${computerRow}_${computerCol}`).innerHTML = '🤖'
         isWinning(computerRow, computerCol)
         isMovesLeft()
-        currentPlayer = 'X'
+        currentPlayer = '😎'
     } else {
-        currentPlayer ='o'
+        currentPlayer ='🤖'
     }
 
     handlePlayerSwitch()
@@ -234,12 +234,13 @@ function winnActions(winner) {
         // Activate confetti animation
         const confettiSection = document.getElementById('confetti')
         confettiSection.classList.add('active')
+        
 }
 
 // ----------------------------------  RESET GAME
 let handlePlayAgain = () => {
     gameActive = true
-    currentPlayer = 'X'
+    currentPlayer = '😎'
     counter = 0
     countField.innerHTML = '0'
     statusDisplay.innerHTML = ''
@@ -247,11 +248,14 @@ let handlePlayAgain = () => {
     player1.style.background = player2.style.background = '#d0bdf4'
     playField.removeChild(document.getElementById('container'))
     handleStart()
+     // Activate confetti animation
+     const confettiSection = document.getElementById('confetti')
+     confettiSection.classList.remove('active')
 }
 
 let handleRestart = () => {
     gameActive = true
-    currentPlayer = 'X'
+    currentPlayer = '😎'
     counter = 0
     countField.innerHTML = '0'
     statusDisplay.innerHTML = ''
@@ -261,6 +265,9 @@ let handleRestart = () => {
     player1.innerHTML = player2.innerHTML = '-'
     startBox.className = 'sidebar'
     playField.removeChild(document.getElementById('container'))
+ // Activate confetti animation
+ const confettiSection = document.getElementById('confetti')
+ confettiSection.classList.remove('active')
 }
 
 document.querySelector('#start').addEventListener('click', handleStart)
@@ -268,29 +275,25 @@ document.querySelector('#playAgain').addEventListener('click', handlePlayAgain)
 document.querySelector('#restart').addEventListener('click', handleRestart)
 
 
+// Get the "Change" button for Player X and add a click event listener
+const playerXButton = document.getElementById("player-x-avatar-action");
+playerXButton.addEventListener("click", changeAvatar);
 
+// Get the "Change" button for Player O and add a click event listener
+const playerOButton = document.getElementById("player2_action");
+playerOButton.addEventListener("click", changeAvatar);
 
+function changeAvatar(event) {
+  const playerId = event.target.id.includes("player-x") ? "x" : "o"; // Check which player's button was clicked
 
+  // Get the image element for the player
+  const playerAvatar = document.getElementById(`player-${playerId}-avatar`);
 
+  // Prompt the user to select a new avatar image
+  const newAvatarUrl = prompt(`Enter a URL for the new avatar image of Player ${playerId.toUpperCase()}`);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-function onMount() {
-    player1 = "img/a2.png";
-    player2 = "img/a1.jpeg";
-  
-    playerXAvatar.src = avatarX;
-    playerOAvatar.src = avatarO;
+  // Update the player's avatar image if the user provided a URL
+  if (newAvatarUrl) {
+    playerAvatar.setAttribute("src", newAvatarUrl);
+  }
 }
-    onMount();
